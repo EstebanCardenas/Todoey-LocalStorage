@@ -25,9 +25,7 @@ class Task {
 
   get done => intDone == 1;
 
-  void toggleDone() {
-    intDone = intDone == 0 ? 1 : 0;
-  }
+  void toggleDone() => intDone = intDone == 0 ? 1 : 0;
 
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
